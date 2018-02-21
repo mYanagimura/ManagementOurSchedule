@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/originalLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/originalConstrantLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+        <TextView
+            android:id="@+id/originalTitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:maxWidth="160dp"
+            android:singleLine="false"
+            android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/originalCheckBoxLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/originalCheckBoxLayout" />
+
+        <LinearLayout
+            android:id="@+id/originalCheckBoxLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <CheckBox
+                android:id="@+id/originalCheckBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorAccent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:textColor="@color/colorAccent"
+                android:textColorHighlight="@color/colorAccent"
+                android:textColorLink="@color/colorAccent"
+                tools:layout_editor_absoluteX="143dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <CheckBox
+                android:id="@+id/originalCheckBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorAccent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                app:layout_constraintBottom_toBottomOf="@+id/originalCheckBox3"
+                app:layout_constraintStart_toEndOf="@+id/originalCheckBox3"
+                app:layout_constraintTop_toTopOf="@+id/originalCheckBox3" />
+
+            <CheckBox
+                android:id="@+id/originalCheckBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorAccent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                app:layout_constraintBottom_toBottomOf="@+id/originalCheckBox2"
+                app:layout_constraintStart_toEndOf="@+id/originalCheckBox2"
+                app:layout_constraintTop_toTopOf="@+id/originalCheckBox2" />
+
+            <CheckBox
+                android:id="@+id/originalCheckBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorAccent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                app:layout_constraintBottom_toBottomOf="@+id/originalCheckBox1"
+                app:layout_constraintStart_toEndOf="@+id/originalCheckBox1"
+                app:layout_constraintTop_toTopOf="@+id/originalCheckBox1" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
